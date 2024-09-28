@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body,
@@ -20,6 +21,9 @@ html {
     background-color: black;
     grid-column: 1 / 2;
     grid-row: 1 / 3;
+    display: grid;
+    grid-template-rows: 10vh 40vh 20vh;
+    gap: 50px;
 }
 
 .main-part {
@@ -65,4 +69,24 @@ h1 {
 
 .three {
     grid-row: 3 / 6;
+}
+
+.nav {
+    color: white;
+    cursor: pointer;
+    background-color: black;
+    border: none;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.sidebar-middle {
+    display: grid;
+}
+
+.sidebar-bottom {
+    display: grid;
+
 }
