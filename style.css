@@ -17,6 +17,7 @@ html {
     grid-template-rows: 200px 1fr;
 }
 
+/* Styles for the sidebar */
 .sidebar {
     background-color: black;
     grid-column: 1 / 2;
@@ -24,10 +25,6 @@ html {
     display: grid;
     grid-template-rows: 10vh 40vh 20vh;
     gap: 50px;
-}
-
-.main-part {
-    background-color: rgb(177, 186, 198);
 }
 
 .sidebar-top {
@@ -98,7 +95,6 @@ h1 {
 .nav img {
     width: 24px;
     height: 24px;
-    vertical-align: -4px;
 }
 
 .nav img,
@@ -111,4 +107,9 @@ h1 {
 }
 .nav:active {
     background-color: rgb(30, 30, 30);
+}
+/* Styles for the sidebar */
+
+.main-part {
+    background-color: rgb(177, 186, 198);
 }
