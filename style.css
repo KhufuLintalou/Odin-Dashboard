@@ -92,7 +92,7 @@ h1 {
     display: grid;
 }
 
-.nav img {
+img {
     width: 24px;
     height: 24px;
 }
@@ -110,6 +110,56 @@ h1 {
 }
 /* Styles for the sidebar */
 
+.header-top,
+.header-bottom {
+    height: 100%;
+    padding: 20px;
+}
+
+.header-top {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    align-items: center;
+    gap: 50px;
+}
+
+.header {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+
+.searchbox {
+    background-color: rgb(200, 208, 219);
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+}
+
+.section-1 {
+    display: grid;
+    grid-template-columns: 24px minmax(200px, 600px);
+    align-items: center;
+    gap: 10px;
+}
+
+.profile {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+}
+
+.section-2 {
+    display: grid;
+    grid-template-columns: 24px 50px 100px;
+    place-items: center;
+    gap: 10px;
+}
+
+.section-2 span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
 .main-part {
-    background-color: rgb(177, 186, 198);
+    background-color: rgb(200, 208, 219);
 }
