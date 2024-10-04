@@ -14,7 +14,7 @@ html {
     display: grid;
     height: 100%;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 200px 1fr;
+    grid-template-rows: 180px 1fr;
 }
 
 /* Styles for the sidebar */
@@ -81,7 +81,6 @@ h1 {
     grid-template-columns: 30px 50px;
     gap: 20px;
     align-items: center;
-    transition-duration: 30ms;
 }
 
 .sidebar-middle {
@@ -110,10 +109,11 @@ img {
 }
 /* Styles for the sidebar */
 
+/* Styles for the header */
 .header-top,
 .header-bottom {
     height: 100%;
-    padding: 20px;
+    padding: 20px 40px;
 }
 
 .header-top {
@@ -129,13 +129,15 @@ img {
 }
 
 .searchbox {
-    background-color: rgb(200, 208, 219);
+    background-color: rgb(216, 221, 230);
     height: 30px;
     border-radius: 20px;
     border: none;
+    text-indent: 10px;
+    font-size: 18px;
 }
 
-.section-1 {
+.header-top .section-1 {
     display: grid;
     grid-template-columns: 24px minmax(200px, 600px);
     align-items: center;
@@ -148,18 +150,78 @@ img {
     border-radius: 20px;
 }
 
-.section-2 {
+.header-top .section-2 {
     display: grid;
-    grid-template-columns: 24px 50px 100px;
-    place-items: center;
-    gap: 10px;
+    grid-template-columns: 1fr 1fr 2fr;
+    align-items: center;
+    justify-items: end;
+    gap: 20px; 
 }
 
-.section-2 span {
+.header-top .section-2 span {
     font-size: 16px;
     font-weight: bold;
 }
 
+.header-bottom {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    align-items: center;
+}
+
+.header-bottom .section-1 {
+    display: grid;
+    grid-template-columns: 60px 500px;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-bottom img {
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+}
+
+.header-bottom p {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.header-bottom p::first-line {
+    font-size: 16px;
+}
+
+.header-bottom .section-2 {
+    display: flex;
+    gap: 30px
+}
+
+.section-2 button {
+    color: white;
+    background-color: black;
+    padding: 8px;
+    width: 120px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    border: 2px solid black;
+    transition-duration: 100ms;
+}
+
+.section-2 button:hover {
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.section-2 button:active {
+    background-color: rgb(234, 234, 234);
+}
+/* Styles for the header */
+
 .main-part {
-    background-color: rgb(200, 208, 219);
+    background-color: rgb(216, 221, 230);
 }
