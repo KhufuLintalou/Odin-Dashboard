@@ -33,7 +33,7 @@ html {
     gap: 20px;
 }
 
-h1 {
+.sidebar h1 {
     color: white;
 }
 
@@ -129,7 +129,7 @@ img {
 }
 
 .searchbox {
-    background-color: rgb(216, 221, 230);
+    background-color: rgb(220, 226, 236);
     height: 30px;
     border-radius: 20px;
     border: none;
@@ -223,5 +223,51 @@ img {
 /* Styles for the header */
 
 .main-part {
-    background-color: rgb(216, 221, 230);
+    background-color: rgb(220, 226, 236);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 40px 0px 100px 20px;
+}
+
+.main-part > div {
+    height: 100%;
+}
+
+.main-part .section-1 {
+    display: grid;
+    grid-template-rows: 40px 1fr;
+}
+
+.card {
+    height: 250px;
+    width: 400px;
+    background-color: white;
+    padding: 30px 20px 0px 30px;
+    border-radius: 10px;
+    border-left: 10px solid #21eb70;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    transition-duration: 200ms;
+    box-shadow: 2px 5px 5px rgb(188, 194, 203);
+}
+
+.card:hover {
+    border-left: 15px solid #21eb70;
+}
+
+.card div + div {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+
+.card p {
+    color: rgb(50, 50, 50);
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 400px);
+    grid-template-rows: 250px 250px;
+    gap: 30px;
 }
