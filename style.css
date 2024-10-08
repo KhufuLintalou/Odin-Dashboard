@@ -23,7 +23,7 @@ html {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
     display: grid;
-    grid-template-rows: 10vh 40vh 20vh;
+    grid-template-rows: 70px 280px 140px;
     gap: 50px;
 }
 
@@ -197,7 +197,7 @@ img {
     gap: 30px
 }
 
-.section-2 button {
+.header-bottom .section-2 button {
     color: white;
     background-color: black;
     padding: 8px;
@@ -211,21 +211,35 @@ img {
     transition-duration: 100ms;
 }
 
-.section-2 button:hover {
+.header-bottom .section-2 button:hover {
     color: black;
     background-color: white;
     border: 2px solid black;
 }
 
-.section-2 button:active {
+.header-bottom .section-2 button:active {
     background-color: rgb(234, 234, 234);
+}
+
+img[src="Icons/bell-ring-outline.svg"]:hover {
+    background-color: rgb(230, 230, 230);
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 8px rgb(230, 230, 230);
+    cursor: pointer;
+}
+
+img[src="Icons/bell-ring-outline.svg"]:active {
+    background-color: rgb(210,210, 210);
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 8px rgb(210, 210, 210);
 }
 /* Styles for the header */
 
+/* Styles for the main-part */
 .main-part {
     background-color: rgb(220, 226, 236);
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
     padding: 40px 0px 100px 20px;
 }
 
@@ -240,7 +254,6 @@ img {
 
 .card {
     height: 250px;
-    width: 400px;
     background-color: white;
     padding: 30px 20px 0px 30px;
     border-radius: 10px;
@@ -267,7 +280,21 @@ img {
 
 .card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 400px);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: 250px 250px;
     gap: 30px;
 }
+
+.card img:hover {
+    background-color: rgb(230, 230, 230);
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 5px rgb(230, 230, 230);
+    cursor: pointer;
+}
+
+.card img:active {
+    background-color: rgb(210,210, 210);
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 5px rgb(210, 210, 210);
+}
+/* Styles for the main-part */
