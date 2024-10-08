@@ -239,8 +239,9 @@ img[src="Icons/bell-ring-outline.svg"]:active {
 .main-part {
     background-color: rgb(220, 226, 236);
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
     padding: 40px 0px 100px 20px;
+    gap: 20px;
 }
 
 .main-part > div {
@@ -275,7 +276,7 @@ img[src="Icons/bell-ring-outline.svg"]:active {
 }
 
 .card p {
-    color: rgb(50, 50, 50);
+    color: rgb(62, 65, 71);
 }
 
 .card-container {
@@ -296,5 +297,69 @@ img[src="Icons/bell-ring-outline.svg"]:active {
     background-color: rgb(210,210, 210);
     border-radius: 10px;
     box-shadow: 0px 0px 0px 5px rgb(210, 210, 210);
+}
+
+.main-part .section-2 {
+    display: grid;
+    grid-template-rows: 40px 1fr 20px 20px 40px 1fr;
+    align-items: center;
+    padding-right: 40px;
+}
+
+.top-part {
+    background-color: white;
+    padding: 40px 30px 40px 30px;
+    display: grid;
+    grid-auto-rows: 50px;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 2px 5px 5px rgb(188, 194, 203);
+}
+
+.top-part p {
+    color: rgb(62, 65, 71);
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.announcement {
+    cursor: pointer;
+}
+
+.top-part + h2 {
+    grid-row: 5 / 6;
+}
+
+.bottom-part {
+    grid-row: 6 / 7;
+    background-color: white;
+    height: 100%;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 5px rgb(188, 194, 203);
+    align-items: center;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(206, 212, 223);
+}
+
+.bottom-part div {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.bottom-part p {
+    color: rgb(62, 65, 71);
+}
+
+.bottom-part p::first-line {
+    color: black;
 }
 /* Styles for the main-part */
